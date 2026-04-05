@@ -42,9 +42,9 @@ pip install numpy pandas scikit-learn matplotlib seaborn xgboost shap openpyxl
 
 ## Usage
 
-Download the Dataset: Place the Pluvial_Flood_Dataset.xlsx file in the project's root directory or update the DATA_PATH variable in the notebook.
-Run the Jupyter/Colab Notebook: Execute the cells sequentially in the pluvial_flood_prediction.ipynb notebook (or similar name).
-Explore Results: The notebook will generate several plots (flood_model_evaluation.png, flood_shap_importance.png) and a CSV file (flood_predictions.csv) containing the model's predictions.
+- Download the Dataset: Place the Pluvial_Flood_Dataset.xlsx file in the project's root directory or update the DATA_PATH variable in the notebook.
+- Run the Jupyter/Colab Notebook: Execute the cells sequentially in the pluvial_flood_prediction.ipynb notebook (or similar name).
+- Explore Results: The notebook will generate several plots (flood_model_evaluation.png, flood_shap_importance.png) and a CSV file (flood_predictions.csv) containing the model's predictions.
 
 ## Key Steps in the Notebook:
 
@@ -62,17 +62,17 @@ Explore Results: The notebook will generate several plots (flood_model_evaluatio
 
 ## Results and Insights
 
-Models achieve near-perfect accuracy with the original SUSCEP labels due to their deterministic nature.
-With simulated realistic (noisy) labels, the best models achieve approximately 78-79% accuracy and macro-F1 scores, providing a more reliable estimate of real-world performance.
-Spatial cross-validation is crucial for models dealing with spatially autocorrelated data to avoid overly optimistic performance estimates.
-Feature engineering significantly enhances model performance.
+- Models achieve near-perfect accuracy with the original SUSCEP labels due to their deterministic nature.
+- With simulated realistic (noisy) labels, the best models achieve approximately 78-79% accuracy and macro-F1 scores, providing a more reliable estimate of real-world performance.
+- Spatial cross-validation is crucial for models dealing with spatially autocorrelated data to avoid overly optimistic performance estimates.
+- Feature engineering significantly enhances model performance.
 
 ## Future Work
 
-Integrate actual observed flood event data instead of a susceptibility index.
-Explore advanced deep learning architectures for geospatial data.
-Incorporate additional features such as soil type, land cover, and detailed elevation derivatives.
-Expand spatial cross-validation to 10 folds for even more robust evaluation.
+- Integrate actual observed flood event data instead of a susceptibility index.
+- Explore advanced deep learning architectures for geospatial data.
+- Incorporate additional features such as soil type, land cover, and detailed elevation derivatives.
+- Expand spatial cross-validation to 10 folds for even more robust evaluation.
 
 ## Contributing
 
